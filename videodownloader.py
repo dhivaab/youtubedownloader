@@ -14,6 +14,7 @@ mp3_playlist_options = {
         'audioformat' : "mp3",      # convert to mp3 
         'outtmpl': '%(title)s.%(ext)s.',
         'noplaylist' : False,        # only download single song, not playlist
+        'include-ads' : False  # no adds in the download. 
 }
 playlist ='https://www.youtube.com/playlist?list=PLloxhkoIi9rDjzSsVNW8QA23l7HvyczFz'
 with youtube_dl.YoutubeDL(mp3_playlist_options) as ydl:
